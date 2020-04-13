@@ -1,0 +1,11 @@
+﻿@model FlexappTestSolution.Models.Employee
+
+<input name="original.Department.Id" value="@Model.Department?.Id" type="hidden" />
+<input name="original.Supplier.Name" value="@Model.Department?.Name" type="hidden" />
+
+<input type="hidden" asp-for="Department.Id" />
+<div class="form-group">
+    <label asp-for="Department.Name"></label>
+    <input asp-for="Department.Name" class="form-control" />
+</div>
+ 
